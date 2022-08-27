@@ -1,14 +1,20 @@
 //变量定义
 var name = 'Voyager I';
+var longString="""
+天下大势
+为我所控
+""";
 var year = 1977;
 var antennaDiameter = 3.7;
-int? x = null; //可控类型
+int? x = null; //可空类型
+
+//数组类型
 var flybyObjects = ['Jupiter', 'Saturn', 'Uranus', 'Neptune'];
+//字段类型
 var image = {
   'tags': ['saturn'],
   'url': '//path/to/saturn.jpg'
 };
-
 void main() {
   print(image);
 

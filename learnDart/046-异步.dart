@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:math' show Random;
 
 void main() async {
@@ -42,4 +43,20 @@ class Point {
   const Point(this.x, this.y);
 
   bool get isInsideUnitCircle => x * x + y * y <= 1;
+}
+
+/// 微任务
+/// 定时器
+void test() async {
+  print('start');
+  scheduleMicrotask(() {
+    print('Microtask 1');
+  });
+  Future.delayed(Duration(seconds: 0)).then((value) {
+    print('Future 1');
+  });
+  Timer.run(() {
+    print('Timer 1');
+  });
+  print('end');
 }

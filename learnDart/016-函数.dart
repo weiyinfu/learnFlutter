@@ -8,8 +8,7 @@ int sumUpToFive(int a, [int? b, int? c, int? d, int? e]) {
 }
 
 //默认参数
-int sumUpToFiveDefaultValue(int a,
-    [int b = 2, int c = 3, int d = 4, int e = 5]) {
+int sumUpToFiveDefaultValue(int a, [int b = 2, int c = 3, int d = 4, int e = 5]) {
   return 0;
 }
 
@@ -27,6 +26,11 @@ void testPrintName() {
   printName('John', 'Smith', middleName: 'Who');
   // Named arguments can be placed anywhere in the argument list
   printName('John', middleName: 'Who', 'Smith');
+}
+
+//动态函数，返回值为dynamic
+haha() {
+  print("天下大势，为我所控");
 }
 
 void main() {

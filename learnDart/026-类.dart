@@ -60,7 +60,7 @@ class Shape {
   }
 }
 /*
-* const构造方法生成的对象不会发生更改，这些变量可以成为编译时常来那个
+* const构造方法生成的对象不会发生更改，这些变量可以成为编译时常量
 * */
 
 class ImmutablePoint {
